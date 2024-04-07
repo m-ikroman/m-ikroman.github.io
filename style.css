@@ -1,0 +1,609 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #424aff;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #03001c;
+}
+
+.container {
+  width: 970px;
+  margin: auto;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 18px;
+  background-color: #03001c;
+}
+
+header h1 {
+  font-family: "Roboto Slab", serif;
+}
+
+header .bulan i {
+  cursor: pointer;
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+header .bulan i:hover {
+  color: #424aff;
+}
+
+/* Navigasi */
+
+nav {
+  position: fixed;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+  background-color: rgba(13, 7, 68, 0.5);
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav i {
+  font-size: 38px;
+  border-radius: 4px;
+  color: whitesmoke;
+}
+
+nav i:hover {
+  color: #424aff;
+}
+
+/* intro */
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 50px;
+  height: 180px;
+}
+
+.intro .introduction {
+  font-family: "Roboto Slab", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro .introduction h4,
+.intro .introduction h2 {
+  text-align: center;
+  padding: 0 20px;
+  font-size: 42px;
+  color: white;
+}
+
+.intro .introduction h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.intro .introduction h4 {
+  font-size: 20px;
+}
+
+.intro .cta {
+  display: flex;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+.intro .cta .cta-contact {
+  margin-right: 5px;
+  width: 85px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: transparent;
+  font-weight: bolder;
+  border: solid 2px #0d0744;
+  cursor: pointer;
+}
+
+.intro .cta .cta-contact:hover {
+  background-color: #424aff;
+  color: #03001c;
+}
+
+.intro .cta .cta-about {
+  margin-left: 5px;
+  width: 85px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: #424aff;
+  color: #03001c;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.intro .cta .cta-about:hover {
+  background-color: transparent;
+  color: #424aff;
+  border: solid 2px #0d0744;
+}
+
+/* Hero */
+
+.hero {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero .hero-sosmed {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-evenly;
+  flex-grow: 1;
+}
+
+.hero .hero-sosmed a {
+  font-size: 36px;
+}
+
+.hero .hero-sosmed a i:hover {
+  color: white;
+}
+
+.hero .hero-img {
+  flex-grow: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.hero .hero-img .hero-foto {
+  overflow: hidden;
+  border-top-left-radius: 44%;
+  border-top-right-radius: 44%;
+  background-image: linear-gradient(
+    to bottom,
+    #282c99,
+    rgba(178, 179, 208, 0.25)
+  );
+}
+
+.hero .hero-img .hero-foto img {
+  width: 275px;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+.hero .hero-down {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.hero .hero-down a {
+  font-size: 36px;
+  font-weight: 900;
+}
+
+/* About */
+
+.about {
+  margin-top: 30px;
+}
+
+.about h2 {
+  font-family: "Roboto Slab", serif;
+  font-size: 34px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about .box-about {
+  display: flex;
+  align-items: stretch;
+  width: 90%;
+  margin: auto;
+}
+
+.about .box-about .about-right {
+  flex-grow: 1;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.about .box-about .about-right .deskripsi {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about .box-about .about-right .tombol-contact-deskripsi {
+  width: 85px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: #424aff;
+  color: #03001c;
+  font-weight: bold;
+}
+
+.about .box-about .about-right .deskripsi .experiences,
+.about .box-about .about-right .deskripsi .projects,
+.about .box-about .about-right .deskripsi .education {
+  text-align: center;
+  padding: 8px 0;
+  background-color: rgb(13, 7, 68);
+  width: 30%;
+  border-radius: 15px;
+}
+
+.about .box-about .about-right .deskripsi .experiences h1,
+.about .box-about .about-right .deskripsi .projects h1,
+.about .box-about .about-right .deskripsi .education h1 {
+  margin-bottom: 10px;
+  font-size: 64px;
+}
+
+.about .box-about .about-right .deskripsi .experiences h3,
+.about .box-about .about-right .deskripsi .projects h3,
+.about .box-about .about-right .deskripsi .education h3 {
+  margin-bottom: 5px;
+  color: whitesmoke;
+}
+
+.about .box-about p {
+  color: whitesmoke;
+}
+
+.about .box-about .about-left {
+  flex-grow: 1;
+  width: 45%;
+}
+
+.about .box-about .about-left img {
+  width: 325px;
+  height: 325px;
+}
+
+/* Skills */
+
+.skills {
+  margin-top: 30px;
+}
+
+.skills h2 {
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  font-size: 34px;
+}
+
+.skills .box-skills {
+  background-color: #0d0744;
+  width: 50%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.skills .box-skills h3 {
+  color: whitesmoke;
+  text-align: center;
+  font-size: 24px;
+}
+
+.skills .box-skills .skills-text {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  font-size: 20px;
+}
+
+.skills .box-skills .skills-text .skills-p .bi {
+  margin-right: 10px;
+}
+
+.skills .box-skills .skills-text .skills-p,
+.skills .box-skills .skills-text .skills-pr {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Reason */
+
+.reason {
+  margin-top: 30px;
+}
+
+.reason h2 {
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+.reason .box-reason {
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  background-color: #0d0744;
+  border-radius: 15px;
+}
+
+.reason .box-reason p {
+  font-size: 18px;
+  color: whitesmoke;
+}
+
+/* Testimonials */
+
+.testimonials {
+  margin-top: 30px;
+  padding: 0 40px;
+}
+
+.testimonials h2 {
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  font-size: 34px;
+}
+
+.testimonials .testimonials-box {
+  display: flex;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.testimonials .testimonials-box .clients {
+  background-color: #0d0744;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.testimonials .testimonials-box .clients .client {
+  display: flex;
+  gap: 10px;
+}
+
+.testimonials .testimonials-box .clients .client .img-client {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.testimonials .testimonials-box .clients .client .identitas-client {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonials .testimonials-box .clients .client .identitas-client h3,
+.testimonials .testimonials-box .clients .client .identitas-client p,
+.testimonials .testimonials-box .clients .ulasan-client p {
+  color: whitesmoke;
+}
+
+/* Portfolio */
+
+.portfolio {
+  margin-top: 30px;
+}
+
+.portfolio h2 {
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  font-size: 34px;
+}
+
+.portfolio .box-portfolio {
+  padding-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.portfolio .box-portfolio .items {
+  width: 45%;
+  border-radius: 20px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  background-color: #0d0744;
+}
+
+.portfolio .box-portfolio .items .img-item {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.portfolio .box-portfolio .items .img-item img {
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio .box-portfolio .items .text-item p {
+  margin-top: 5px;
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+/* contact */
+
+.contact {
+  margin-top: 30px;
+}
+
+.contact h2 {
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  font-size: 34px;
+}
+
+.contact .contact-box {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.contact .contact-box .left-contact {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact .contact-box .left-contact .contact-email,
+.contact .contact-box .left-contact .contact-telepon,
+.contact .contact-box .left-contact .contact-messenger {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  background-color: #0d0744;
+  border-radius: 10px;
+}
+
+.contact .contact-box .left-contact .contact-email h1,
+.contact .contact-box .left-contact .contact-telepon h1,
+.contact .contact-box .left-contact .contact-messenger h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.contact .contact-box .left-contact .contact-email h3,
+.contact .contact-box .left-contact .contact-telepon h3,
+.contact .contact-box .left-contact .contact-messenger h3 {
+  margin-bottom: 6px;
+  color: white;
+}
+
+.contact .contact-box .left-contact p {
+  color: whitesmoke;
+}
+
+.contact .contact-box .right-contact {
+  width: 50%;
+}
+
+.right-contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #0d0744;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.right-contact form .form-group label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.right-contact form .form-group input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 0 15px;
+  font-size: 16px;
+  background-color: #03001c;
+  outline: #424aff;
+  border: 2px solid #424aff;
+  border-radius: 5px;
+  color: white;
+}
+
+.right-contact form .form-group textarea {
+  width: 100%;
+  height: 130px;
+  padding: 10px;
+  font-size: 15;
+  background-color: #03001c;
+  border: 2px solid #424aff;
+  border-radius: 5px;
+}
+
+.right-contact form button {
+  width: 85px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: #424aff;
+  color: #03001c;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* footer */
+
+footer {
+  margin-top: 30px;
+  background-color: #0d0744;
+  border-radius: 20px;
+}
+
+footer h2 {
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  font-size: 34px;
+}
+
+footer .box-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  font-size: 18px;
+}
+
+footer .footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+footer .box-footer .footer-copyright {
+  font-size: inherit;
+}
+
+footer .box-footer p,
+footer .box-footer a {
+  color: whitesmoke;
+  text-decoration: none;
+}

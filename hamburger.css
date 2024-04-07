@@ -1,0 +1,138 @@
+/* Hamburger Menu */
+body{
+    overflow-x: hidden;
+}
+
+header .menu-togle{
+    display: none;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    cursor: pointer;
+}
+
+header ul{
+    display: none;
+}
+
+header .menu-togle input{
+    position: absolute;
+    width: 40px;
+    height: 24px;
+    left: -7px;
+    top: -2px;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
+
+header .menu-togle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: white;
+    transition: all .5s;
+}
+
+
+/* hamburger animation */
+header .menu-togle span:nth-child(2){
+    transform-origin: 0 0;
+}
+
+header .menu-togle span:nth-child(4){
+    transform-origin: 0 0;
+}
+
+header .menu-togle input:checked ~ span:nth-child(2){
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+header .menu-togle input:checked ~ span:nth-child(4){
+    transform: rotate(-45deg) translate(-2px, -1px);
+}
+
+header .menu-togle input:checked ~ span:nth-child(3){
+    transform: scale(0);
+    opacity: 0;
+}
+
+/*Tablet*/
+@media screen and (max-width: 768px) {
+    header{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        right: 0;
+        left: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+  header .menu-togle {
+    display: flex;
+  }
+
+  header ul {
+    position: absolute;
+    display: flex;
+    top: 50px;
+    right: 0;
+    width: 80%;
+    height: 90vh;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #03001c;
+    z-index: 2;
+    transform: translateX(100%);
+    transition: all 0.85s;
+    opacity: 0;
+  }
+
+  header ul li{
+    list-style: none;
+  }
+
+  header ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+header ul li a:hover {
+  color: #777;
+  background-color: white;
+}
+
+.intro{
+    margin-top: 100px;
+}
+
+  header ul.slide {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 425px) {
+    header{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        right: 0;
+        left: 0;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    header ul li a {
+      font-size: 16px;
+      font-weight: bold;
+    }
+}
