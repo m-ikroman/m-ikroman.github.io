@@ -64,9 +64,9 @@
       <!-- hero section -->
       <section class="hero">
         <div class="hero-sosmed">
-          <a href="https://github.com/m-ikroman/m-ikroman.github.io" class="github"><i class="bi bi-github"></i></a>
-          <a href="https://www.linkedin.com/in/muhamad-ikroman" class="linkedin"><i class="bi bi-linkedin"></i></a>
-          <a href="www.facebook.com/muhamad.ikroman" class="fb"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="github"><i class="bi bi-github"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="fb"><i class="bi bi-facebook"></i></a>
         </div>
         <div class="hero-img">
           <div class="hero-foto">
@@ -273,7 +273,7 @@
             </div>
           </div>
           <div class="right-contact">
-            <form action="">
+            <form action="" id="contactForm">
               <div class="form-group">
                 <label for="nama">Name</label>
                 <input type="text" id="nama" placeholder="input your name"/>
@@ -283,11 +283,16 @@
                 <input type="email" id="email" placeholder="input your email"/>
               </div>
               <div class="form-group">
+                <label for="nohp">Phone Number</label>
+                <input type="text" id="nohp" placeholder="input your phone number"/>
+              </div>
+              <div class="form-group">
                 <label for="message">Message</label>
                 <textarea id="pesan" name="pesan" rows="4" cols="50" placeholder="message..."></textarea
                 ><br />
               </div>
               <button>Submit</button>
+              <div id="errorMessages"></div>
             </form>
           </div>
         </div>
@@ -298,13 +303,13 @@
         <h2>Ikroman</h2>
         <div class="box-footer">
           <div class="footer-nav">
-            <a href="#header">Home</a>
-            <a href="#about">About me</a>
-            <a href="#skills">My abilities</a>
-            <a href="#reason">Why hire me?</a>
-            <a href="#testimonials">Client testimonials</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
+            <a href="#">Home</a>
+            <a href="#">About me</a>
+            <a href="#">My abilities</a>
+            <a href="#">Why hire me?</a>
+            <a href="#">Client testimonials</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
           </div>
           <div class="footer-contact">
             <a href="#">ikroman9a@gmail.com</a>
@@ -312,9 +317,9 @@
             <p>@ikroman</p>
           </div>
           <div class="footer-icon">
-            <a href="www.facebook.com/muhamad.ikroman">facebook</a>
-            <a href="https://www.linkedin.com/in/muhamad-ikroman">linkedin</a>
-            <a href="https://github.com/m-ikroman/m-ikroman.github.io">github</a>
+            <a href="#">facebook</a>
+            <a href="#">linkedin</a>
+            <a href="#">github</a>
           </div>
           <div class="footer-copyright">
             <p>© ️ikroman.com All rigths reserved 2024</p>
@@ -323,6 +328,8 @@
         
       </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="jquery.js"></script>
     <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
